@@ -12,10 +12,7 @@ def reduce(array, start = 0)
   i = 0
   while i < array.length do
     current = array[count]
-    if current == true 
-      return true
-    end
-    count += 1
+    
   end
   return false
 end
