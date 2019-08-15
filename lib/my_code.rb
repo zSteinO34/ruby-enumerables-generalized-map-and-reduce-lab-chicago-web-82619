@@ -17,7 +17,7 @@ def reduce(array, start = 0)
     end
     i += 1
   end
-  return result
+  return false
 end
 
 def reduce_to_any_true(source_array)
