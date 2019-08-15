@@ -16,15 +16,3 @@ def reduce(array, start = 0)
   end
   return result
 end
-
-def reduce_to_any_true(source_array)
-  count = 0
-  while count < source_array.length do
-    current = source_array[count]
-    if current == true 
-      return true
-    end
-    count += 1
-  end
-  return false
-end
