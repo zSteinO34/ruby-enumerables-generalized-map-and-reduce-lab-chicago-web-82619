@@ -12,7 +12,9 @@ def reduce(array, start = 0)
   i = 0
   result = start
   while i < array.length do
-    yield(array[i])
+    if result == true
+      yield(array[i])      
+    end
     i += 1
   end
   return result
