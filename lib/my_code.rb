@@ -16,3 +16,10 @@ def reduce(array, start = 0)
   end
   return result
 end
+
+
+
+
+
+
+
