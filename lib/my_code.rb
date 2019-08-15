@@ -11,13 +11,10 @@ end
 def reduce(array, start = 0)
   i = 0
   while i < array.length do
-    result = array[i]
-    if result == true
-      yield(array[i])      
-    end
+    result = yield(array[i])
     i += 1
   end
-  return false
+  return result
 end
 
 def reduce_to_any_true(source_array)
