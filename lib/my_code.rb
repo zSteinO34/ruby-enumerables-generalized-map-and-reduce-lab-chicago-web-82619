@@ -10,8 +10,8 @@ end
 
 def reduce(array, start = 0)
   i = 0
-  result = start
   while i < array.length do
+    result = array[i]
     if result == true
       yield(array[i])      
     end
