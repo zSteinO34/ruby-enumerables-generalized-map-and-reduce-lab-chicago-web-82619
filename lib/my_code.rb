@@ -8,5 +8,14 @@ def map(array)
   return new
 end
 
-def reduce(array)
-  
+def reduce(array, start = 0)
+  count = 0
+  while count < array.length do
+    current = array[count]
+    if current == true 
+      return true
+    end
+    count += 1
+  end
+  return false
+end
