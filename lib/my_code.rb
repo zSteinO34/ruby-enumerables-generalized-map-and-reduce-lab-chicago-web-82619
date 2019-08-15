@@ -8,13 +8,19 @@ def map(array)
   return new
 end
 
-def reduce(array, start = 0)
-  i = 0
-  while i < array.length do
-    result = yield(array[i])
-    i += 1
+def reduce(array, start = nil)
+  if start
+    num1 = start
+    i = 0
+  else
+    num1 = array[0]
+    i = 1
   end
-  return result
+  
+  while i < array.length do
+    
+
+
 end
 
 
